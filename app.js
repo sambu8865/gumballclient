@@ -17,7 +17,7 @@ var Client=require('node-rest-client').Client;
 app.use("/images",express.static(__dirname+'/images'));
 
 // all environments
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 8080);
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 app.use(express.favicon());
